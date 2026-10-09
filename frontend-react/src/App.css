@@ -1,0 +1,108 @@
+:root {
+  --bg-primary: #0b0f19;
+  --bg-secondary: #111827;
+  --bg-card: #1f2937;
+  --bg-card-hover: #374151;
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  --border-color: #374151;
+
+  --accent-primary: #38bdf8;
+  --accent-hover: #0ea5e9;
+
+  --bullish-color: #10b981;
+  --bearish-color: #f43f5e;
+  --bullish-bg: rgba(16, 185, 129, 0.15);
+  --bearish-bg: rgba(244, 63, 94, 0.15);
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  min-height: 100vh;
+}
+
+/* Custom theme utilities */
+.bg-theme-main {
+  background-color: var(--bg-primary) !important;
+}
+
+.bg-theme-card {
+  background-color: var(--bg-card) !important;
+}
+
+.border-theme {
+  border-color: var(--border-color) !important;
+}
+
+.text-theme-primary {
+  color: var(--text-primary) !important;
+}
+
+.text-theme-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.text-bullish {
+  color: var(--bullish-color) !important;
+}
+
+.text-bearish {
+  color: var(--bearish-color) !important;
+}
+
+.badge-bullish {
+  background-color: var(--bullish-bg);
+  color: var(--bullish-color);
+  border: 1px solid var(--bullish-color);
+}
+
+.badge-bearish {
+  background-color: var(--bearish-bg);
+  color: var(--bearish-color);
+  border: 1px solid var(--bearish-color);
+}
+
+/* Component Overrides for Bootstrap in Dark Theme */
+.navbar-theme {
+  background-color: var(--bg-secondary) !important;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.form-control, .form-select {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+.form-control::placeholder {
+  color: var(--text-muted) !important;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--accent-primary) !important;
+  color: var(--text-primary) !important;
+  box-shadow: 0 0 0 0.25rem rgba(56, 189, 248, 0.25) !important;
+}
+
+.btn-theme-primary {
+  background-color: var(--accent-primary);
+  color: #0b0f19;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-theme-primary:hover {
+  background-color: var(--accent-hover);
+  color: #ffffff;
+}

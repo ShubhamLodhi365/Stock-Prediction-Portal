@@ -1,0 +1,23 @@
+body{
+    background-color: #212529;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15%;
+}
+
+.bg-light-dark{
+    background-color: #2B3035;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
