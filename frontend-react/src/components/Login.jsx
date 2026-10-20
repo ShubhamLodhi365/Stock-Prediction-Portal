@@ -52,7 +52,7 @@ const Login = () => {
                         {error && <div className="text-danger">{error}</div>}
 
                         {loading ? (
-                          <button type="submit" className="btn btn-info d-block mx-auto" disabled> <FontAwesomeIcon icon={faSpinner} spin /> Logging in...</button>
+                          <button type="submit" className="btn btn-info d-block mx-auto" disabled><FontAwesomeIcon icon={faSpinner} spin /> Logging in...</button>
                         ) : (
                           <button type="submit" className="btn btn-info d-block mx-auto">Login</button>
                         )}
